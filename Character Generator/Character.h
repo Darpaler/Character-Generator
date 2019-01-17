@@ -26,6 +26,7 @@ class Zombie : public Character
 {
 public:
 	Zombie();
+	~Zombie();
 
 };
 #endif
