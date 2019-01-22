@@ -42,6 +42,7 @@ public:
 	void setCombatStrength(int C);
 	
 	void display();
+	void display(bool details);
 
 private:
 	int mischief;

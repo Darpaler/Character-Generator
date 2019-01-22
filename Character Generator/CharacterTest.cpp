@@ -24,10 +24,19 @@ void main()
 	character3.display();
 	cout << endl;
 
-	//Goblin
+	//Goblins
 	cout << "Goblin:\n";
-	Goblin goblin1 = Goblin("Uknorm", 8, 16, 12);
+	Goblin goblin1 = Goblin("Uknorm", 8, 16, 12);	//Default Goblin
 	goblin1.display();
+	cout << endl;
+
+	cout << "Goblin With Polymorphism (false):\n";
+	Goblin goblin2 = Goblin("Julb", -8, 17, 11);	//Goblin With Polymorphism (false)
+	goblin2.display(false);
+	cout << endl;
+
+	cout << "Goblin With Polymorphism (true):\n";	//Goblin With Polymorphism (true)
+	goblin2.display(true);
 	cout << endl;
 
 	//Joblin

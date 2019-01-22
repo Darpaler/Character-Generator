@@ -77,7 +77,14 @@ Goblin::Goblin()	//Default
 Goblin::Goblin(std::string N, int H, int M, int C)	//With Parameters
 {
 	name = N;
-	health = H;
+	if (H > 0)
+	{
+		health = H;
+	}
+	else
+	{
+		cout << "A character's health can't be less than 1." << endl;
+	}
 	mischief = M;
 	combatStrength = C;
 }
@@ -114,6 +121,20 @@ void Goblin::display()
 	cout << "Likelihood of Mischief: " << mischief << "\nCombat Strength: " << combatStrength << endl;
 }
 
+void Goblin::display(bool details)
+{
+	if (details)
+	{
+		cout << name << " the Goblin" << "\nHealth: " << health << endl
+			 << "Likelihood of Mischief: " << mischief << "\nCombat Strength: " << combatStrength << endl;
+	}
+	else
+	{
+		cout << "A Goblin\n" << "Stats Unknown" << endl;
+	}
+}
+
+
 //Joblin
 
 //Constructors
@@ -125,7 +146,14 @@ Joblin::Joblin()	//Default
 Joblin::Joblin(std::string N, int H, string B, int A)	//With Parameters
 {
 	name = N;
-	health = H;
+	if (H > 0)
+	{
+		health = H;
+	}
+	else
+	{
+		cout << "A character's health can't be less than 1." << endl;
+	}
 	businessAttire = B;
 	assertation = A;
 }
