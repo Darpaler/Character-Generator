@@ -18,7 +18,14 @@ Character::Character()	//Default
 Character::Character(std::string N, int H)	//With Parameters
 {
 	name = N;
-	health = H;
+	if (H > 0)
+	{
+		health = H;
+	}
+	else
+	{
+		cout << "A character's health can't be less than 1." << endl;
+	}
 }
 
 //Destructor

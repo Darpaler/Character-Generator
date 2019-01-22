@@ -19,6 +19,11 @@ void main()
 	character2.display();
 	cout << endl;
 
+	cout << "Character with Negative Health:\n";
+	Character character3 = Character("Joe", -10);	//Character with Negative Health
+	character3.display();
+	cout << endl;
+
 	//Goblin
 	cout << "Goblin:\n";
 	Goblin goblin1 = Goblin("Uknorm", 8, 16, 12);

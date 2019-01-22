@@ -25,7 +25,7 @@ public:
 
 protected:
 	string name;
-	int health;
+	int health = 1;
 };
 
 class Goblin : public Character
