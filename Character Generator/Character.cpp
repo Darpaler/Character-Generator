@@ -189,3 +189,16 @@ void Joblin::display()
 	cout << name << " the Joblin" << "\nHealth: " << health << endl;
 	cout << "Business Attire: " << businessAttire << "\nAssertive Demeanor: " << assertation << endl;
 }
+
+void Joblin::display(bool details)
+{
+	if (details)
+	{
+		cout << name << " the Joblin" << "\nHealth: " << health << endl
+			 << "Business Attire: " << businessAttire << "\nAssertive Demeanor: " << assertation << endl;
+	}
+	else
+	{
+		cout << "A Joblin\n" << "Stats Unknown" << endl;
+	}
+}

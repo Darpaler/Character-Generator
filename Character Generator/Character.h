@@ -64,6 +64,7 @@ public:
 	void setAssertation(int A);
 	
 	void display();
+	void display(bool details);
 
 private:
 	string businessAttire;
