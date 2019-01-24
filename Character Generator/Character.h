@@ -59,22 +59,25 @@ private:
 class Joblin : public Character
 {
 public:
-	Joblin();
-	Joblin(string N, int H, string B, int A);
-	~Joblin();
-	
+	//Constructors and Destructors
+	Joblin();									//Default Constructor
+	Joblin(string N, int H, string B, int A);	//Constructor with Parameters
+	~Joblin();									//Destructor
+
+	//Getters and Setters
 	string getBusinessAttire();
 	void setBusinessAttire(string B);
 	
 	int getAssertation();
 	void setAssertation(int A);
-	
-	void display();
-	void display(bool details);
+
+	//Display
+	void display();					//Default Display
+	void display(bool details);		//Display with Polymorphism
 
 private:
-	string businessAttire;
-	int assertation;
+	string businessAttire;		//The Character's Current Attire
+	int assertation;			//How Assertive The Character Is
 
 };
 #endif
